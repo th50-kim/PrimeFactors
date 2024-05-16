@@ -13,7 +13,7 @@ public:
 
 		div = value;
 		do {
-			for (n = 2; n <= value;) {
+			for (n = 2; n <= div;) {
 				if ((div % n) == 0) {
 					div /= n;
 					v.push_back(n);
@@ -22,7 +22,7 @@ public:
 				else
 					n++;
 			}
-		} while (n == value);
+		} while (n == div);
 			
 		return v;
 	}
