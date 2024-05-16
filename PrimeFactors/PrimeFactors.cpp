@@ -7,19 +7,19 @@ class PrimeFactors {
 public:
 	vector<int> of(int value)
 	{
-		int rem = value;
+		int remainder = value;
 		vector<int> v;
 		int divisor = 2;
 
 		do {
-			if ((rem % divisor) == 0) {
-				rem /= divisor;
+			if ((remainder % divisor) == 0) {
+				remainder /= divisor;
 				v.push_back(divisor);
 				divisor = 2;
 			}
 			else
 				divisor++;
-		} while (divisor <= rem);
+		} while (divisor <= remainder);
 			
 		return v;
 	}
