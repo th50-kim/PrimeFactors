@@ -14,7 +14,7 @@ TEST(PrimeFactors, OfTest) {
 TEST(PrimeFactors, OfTest2) {
 
 	PrimeFactors pf;
-	vector<int> expected = {};
+	vector<int> expected = {2};
 	EXPECT_EQ(expected, pf.of(2));
 }
 

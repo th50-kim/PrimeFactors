@@ -13,12 +13,14 @@ public:
 
 		div = value;
 		do {
-			for (int n = 2; n < value; n++) {
+			for (n = 2; n <= value;) {
 				if ((div % n) == 0) {
 					div /= n;
 					v.push_back(n);
 					n = 2;
 				}
+				else
+					n++;
 			}
 		} while (n == value);
 			
