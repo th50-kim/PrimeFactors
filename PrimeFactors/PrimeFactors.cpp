@@ -7,7 +7,7 @@ class PrimeFactors {
 public:
 	vector<int> of(int value)
 	{
-		int rem, div;
+		int div;
 		vector<int> v;
 		int n = 0;
 
