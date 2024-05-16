@@ -9,17 +9,17 @@ public:
 	{
 		int rem = value;
 		vector<int> v;
-		int n = 2;
+		int divisor = 2;
 
 		do {
-			if ((rem % n) == 0) {
-				rem /= n;
-				v.push_back(n);
-				n = 2;
+			if ((rem % divisor) == 0) {
+				rem /= divisor;
+				v.push_back(divisor);
+				divisor = 2;
 			}
 			else
-				n++;
-		} while (n <= rem);
+				divisor++;
+		} while (divisor <= rem);
 			
 		return v;
 	}
