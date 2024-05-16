@@ -18,3 +18,19 @@ TEST(PrimeFactors, OfTest2) {
 	EXPECT_EQ(expected, pf.of(2));
 }
 
+TEST(PrimeFactors, OfTest3) {
+
+	PrimeFactors pf;
+	vector<int> expected = {2,2};
+	EXPECT_EQ(expected, pf.of(4));
+}
+
+
+TEST(PrimeFactors, OfTest4) {
+
+	PrimeFactors pf;
+	vector<int> expected = {2,3};
+	EXPECT_EQ(expected, pf.of(6));
+}
+
+	
