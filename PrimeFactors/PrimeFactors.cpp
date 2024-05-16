@@ -9,20 +9,19 @@ public:
 	{
 		int div;
 		vector<int> v;
-		int n = 0;
+		int n = 2;
 
 		div = value;
+
 		do {
-			for (n = 2; n <= div;) {
-				if ((div % n) == 0) {
-					div /= n;
-					v.push_back(n);
-					n = 2;
-				}
-				else
-					n++;
+			if ((div % n) == 0) {
+				div /= n;
+				v.push_back(n);
+				n = 2;
 			}
-		} while (n == div);
+			else
+				n++;
+		} while (n <= div);
 			
 		return v;
 	}
