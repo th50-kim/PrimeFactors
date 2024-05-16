@@ -15,7 +15,6 @@ public:
 			if ((remainder % divisor) == 0) {
 				remainder /= divisor;
 				v.push_back(divisor);
-				divisor = 2;
 			}
 			else
 				divisor++;
